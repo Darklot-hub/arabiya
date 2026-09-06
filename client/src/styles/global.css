@@ -1,0 +1,384 @@
+:root {
+  --color-sand: #f4eee3;
+  --color-cream: #fbf8f1;
+  --color-green: #174c45;
+  --color-green-dark: #103832;
+  --color-terracotta: #b96545;
+  --color-gold: #c69a55;
+  --color-text: #26332f;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #1e2420;
+  background: #f7f5ef;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.wrap {
+  width: min(1120px, calc(100% - 48px));
+  margin: auto;
+}
+.header {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd8cc;
+}
+.logo {
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  font-size: 22px;
+}
+.logo span {
+  font-weight: 400;
+}
+.header nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-size: 14px;
+}
+.hero {
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 80px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 800;
+  color: #81796d;
+  margin-bottom: 14px;
+}
+.hero h1,
+h1 {
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 0.98;
+  margin: 0 0 22px;
+  letter-spacing: -0.04em;
+}
+.hero em,
+h1 em {
+  font-style: normal;
+  color: #a95d35;
+}
+.lead {
+  font-size: 20px;
+  color: #66645d;
+  max-width: 680px;
+}
+.hero-card {
+  background: #1f2722;
+  color: #f6f2e8;
+  padding: 44px;
+  border-radius: 28px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.hero-card span {
+  font-size: 48px;
+  direction: rtl;
+}
+.hero-card strong {
+  font-size: 30px;
+  margin-top: 24px;
+}
+.hero-card p {
+  color: #bdb9ae;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.btn {
+  display: inline-flex;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 20px;
+  font: inherit;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.btn.primary {
+  background: #1f2722;
+  color: #fff;
+}
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #d0c9bc;
+}
+.btn.danger {
+  background: #a84b3a;
+  color: #fff;
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.text-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #6d6a62;
+}
+.section {
+  padding: 80px 0;
+}
+.section h2 {
+  font-size: 42px;
+  letter-spacing: -0.03em;
+  margin: 0 0 28px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card,
+.stat-card,
+.auth-card,
+.form-card,
+.question-card {
+  background: #fff;
+  border: 1px solid #e5e0d6;
+  border-radius: 22px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(50, 40, 20, 0.04);
+
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.card h3 {
+  font-size: 23px;
+  margin: 12px 0 8px;
+}
+.card p {
+  color: #6e6b64;
+}
+.arabic-sm {
+  font-size: 28px;
+  direction: rtl;
+}
+.clubs-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.narrow {
+  max-width: 760px;
+}
+.page-shell {
+  padding: 70px 0;
+  min-height: calc(100vh - 140px);
+}
+.auth-card {
+  max-width: 500px;
+  margin: auto;
+}
+.auth-card h1 {
+  white-space: nowrap;
+  font-size: clamp(24px, 5vw, 40px);
+  text-align: center;
+}
+.auth-card form,
+.form-card {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+.input,
+.textarea,
+select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d9d3c8;
+  border-radius: 12px;
+  background: #fbfaf7;
+  font: inherit;
+}
+.textarea {
+  resize: vertical;
+}
+.dashboard-head,
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 34px;
+}
+.stats-grid,
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.stat-card span {
+  display: block;
+  color: #777168;
+  font-size: 12px;
+}
+.stat-card strong {
+  display: block;
+  font-size: 30px;
+  margin-top: 8px;
+}
+.dashboard-head h1,
+.page-title h1 {
+  font-size: 54px;
+}
+.progress-track {
+  height: 7px;
+  background: #e5e0d6;
+  border-radius: 99px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.progress-track i,
+.track i {
+  display: block;
+  height: 100%;
+  background: #a95d35;
+}
+.question-card {
+  margin-top: 40px;
+}
+.question-card h2 {
+  font-size: 34px;
+}
+.options {
+  display: grid;
+  gap: 10px;
+}
+.option {
+  padding: 16px;
+  border: 1px solid #ddd7cb;
+  border-radius: 14px;
+  background: #faf8f3;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.option.selected {
+  border-color: #a95d35;
+  background: #f2e4da;
+}
+.diagnostic-head .progress-track {
+  max-width: 300px;
+}
+.skill-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+.result-hero {
+  padding: 70px 0;
+}
+.lesson-content {
+  white-space: pre-wrap;
+  background: #fff;
+  padding: 35px;
+  border-radius: 22px;
+  font-size: 20px;
+  line-height: 1.9;
+  margin-top: 30px;
+}
+.loader-wrap {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #777;
+}
+.loader {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #ddd;
+  border-top-color: #a95d35;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.link-card {
+  display: block;
+}
+.admin-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 30px;
+}
+.footer {
+  padding: 35px 0;
+  color: #8a8479;
+  border-top: 1px solid #ddd8cc;
+  margin-top: 30px;
+}
+.error {
+  color: #a84b3a;
+}
+.muted {
+  color: #777;
+}
+.profile {
+  margin-top: 25px;
+}
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .card-grid,
+  .stats-grid,
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+  .header nav {
+    gap: 10px;
+    font-size: 12px;
+  }
+  .wrap {
+    width: min(100% - 28px, 1120px);
+  }
+  .dashboard-head,
+  .page-title,
+  .clubs-intro {
+    display: block;
+  }
+  .dashboard-head h1,
+  .page-title h1 {
+    font-size: 42px;
+  }
+  .hero {
+    min-height: auto;
+    padding: 70px 0;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+}

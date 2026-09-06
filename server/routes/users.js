@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {auth} from '../middleware/auth.js'; import * as c from '../controllers/users.js'; const r=Router();r.get('/me',auth,c.me);r.put('/me',auth,c.update);export default r;

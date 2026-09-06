@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {auth} from '../middleware/auth.js'; import * as c from '../controllers/diagnostic.js'; const r=Router();r.post('/',auth,c.submit);r.get('/latest',auth,c.latest);export default r;
