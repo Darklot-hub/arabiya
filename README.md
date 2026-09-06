@@ -44,5 +44,8 @@ docker compose up --build
 - Middleware: JWT auth + error handler.
 - Handlers вынесены в routes/controllers.
 
+<img width="1498" height="912" alt="Снимок экрана 2026-09-06 152924" src="https://github.com/user-attachments/assets/62ab4701-2b82-4bc4-ab0d-d0cc838651b7" />
+<img width="1891" height="947" alt="Снимок экрана 2026-09-06 152839" src="https://github.com/user-attachments/assets/5c40246d-597e-49f7-8e1b-65e1cf7b1dac" />
+
 
 
