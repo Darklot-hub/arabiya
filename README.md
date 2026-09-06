@@ -25,7 +25,7 @@ docker compose up --build
 ## Демо-аккаунт
 После регистрации можно сразу пройти диагностику. Для демонстрации CRUD добавлен приватный раздел `/admin/lessons`.
 
-## Что реализовано по требованиям
+## Что реализовано
 - Списки: программы, уроки, клубы, диагностические вопросы.
 - Loader: GET-запросы, регистрация/вход, сохранение диагностики, CRUD уроков.
 - React Router: `/`, `/diagnostic`, `/results`, `/dashboard`, `/lessons`, `/lessons/:id`, `/clubs`, `/login`, `/register`, `/profile`, `/admin/lessons`.
